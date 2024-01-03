@@ -42,7 +42,6 @@ function SignIn() {
     if (email.length && password.length > 0 && email.match("@")) {
       localStorage.setItem("role", role);
       navigate("/mainscreen", { state: role });
-      window.location.reload();
     }
   };
   const [user, setuser] = useState(false);
