@@ -109,11 +109,13 @@ function Mainscreen() {
           </div>
         </div>
         <div className="child_parent">
+           <p style={{margin:'0',padding:'0',fontSize:'1rem'}}>Welcome {localStorage.getItem('name')} ({localStorage.getItem('empcode')}) </p>
           <div className="mainscreen_child_1">
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/break", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -125,18 +127,19 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                    <div className="round-div">
-                      <MdFreeBreakfast color="black" size={80} />
+                    <div>
+                      <MdFreeBreakfast size={20} />
                     </div>
-                    <div style={{marginLeft:'1.2rem'}}>break</div>
+                    <div>break</div>
                   </div>
                 )}
-              </div>
+              </button>
             </div>
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/mytask", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -148,18 +151,19 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                  <div className="round-div">
-                    <SiTask color="black" size={80} />
+                    <div>
+                      <SiTask size={20} />
+                    </div>
+                    <div>my task</div>
                   </div>
-                  <div style={{marginLeft:'1rem'}}>My Task</div>
-                </div>
                 )}
-              </div>
+              </button>
             </div>
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/leaverequest", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -171,18 +175,19 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                  <div className="round-div1">
-                    <BsFillCalendarDayFill style={{marginTop:'.2rem',marginLeft:'.2rem'}} color="black" size={65} />
+                    <div>
+                      <BsFillCalendarDayFill size={20} />
+                    </div>
+                    <div>leave request</div>
                   </div>
-                  <div >My Leaverequest</div>
-                </div>
                 )}
-              </div>
+              </button>
             </div>
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/permissionrequest", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -194,20 +199,21 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                  <div className="round-div1">
-                    <MdPunchClock color="black" size={80} />
+                    <div>
+                      <MdPunchClock size={20} />
+                    </div>
+                    <div>permission request</div>
                   </div>
-                  <div >My Permissionrequest</div>
-                </div>
                 )}
-              </div>
+              </button>
             </div>
           </div>
           <div className="mainscreen_child_2">
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/attendance", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -219,18 +225,19 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                  <div className="round-div2">
-                    <IoMdContacts color="black" size={80} />
+                    <div>
+                      <IoMdContacts size={20} />
+                    </div>
+                    <div>attendance </div>
                   </div>
-                  <div >My Break List</div>
-                </div>
                 )}
-              </div>
+              </button>
             </div>
             <div className="Button_1">
-              <div
+              <button
                 onClick={() => {
                   navigate("/mybreaklist", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -242,18 +249,19 @@ function Mainscreen() {
                   />
                 ) : (
                   <div>
-                  <div className="round-div">
-                    <ImHome color="black" size={80} />
+                    <div>
+                      <ImHome size={20} />
+                    </div>
+                    <div>my break list</div>
                   </div>
-                  <div >My Break List</div>
-                </div>
                 )}
-              </div>
+              </button>
             </div>
             <div className="Button_1">
               <button
                 onClick={() => {
                   navigate("/MyTasklist", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -277,6 +285,7 @@ function Mainscreen() {
               <button
                 onClick={() => {
                   navigate("/MyleaveRequestList", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -302,6 +311,7 @@ function Mainscreen() {
               <button
                 onClick={() => {
                   navigate("/mypermissionrequestlist", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -325,6 +335,7 @@ function Mainscreen() {
               <button
                 onClick={() => {
                   navigate("/attendancelist", { replace: true });
+                  
                 }}
               >
                 {screenSize.width < 600 ? (
@@ -398,6 +409,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/leaveapproval", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -421,6 +433,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/adminpermissionapp", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -444,6 +457,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/adminleaverequestlist", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -467,6 +481,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/adminpermissionrequestlist", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -492,6 +507,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/adminleavelist", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -515,6 +531,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/permisssionlist", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
@@ -538,6 +555,7 @@ function Mainscreen() {
                   <button
                     onClick={() => {
                       navigate("/permissionrequestapproval", { replace: true });
+                      
                     }}
                   >
                     {screenSize.width < 600 ? (
