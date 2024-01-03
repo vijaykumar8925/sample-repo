@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/break"
-to = "/break"
+from = "/*"
+to = "/index.html"
 success = 200
